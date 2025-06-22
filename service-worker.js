@@ -1,4 +1,4 @@
-const CACHE_NAME = 'emergency-guide-v9';
+const CACHE_NAME = 'emergency-guide-v10';
 const PRECACHE_ASSETS = [
     '/',
     'index.html',
@@ -11,6 +11,7 @@ const PRECACHE_ASSETS = [
     'js/main.js',
     'js/pwa.js',
     'js/i18n.js',
+    'js/emergency-alert.js',
     'manifest.json',
     'emergency-numbers.json',
 
@@ -68,11 +69,15 @@ const PRECACHE_ASSETS = [
     'video/firstaid.mp4',
     'video/gas.mp4',
 
-    // Translation files
+    // All Translation files
     'i18n/en.json',
+    'i18n/en-uk.json',
     'i18n/es.json',
     'i18n/fr.json',
     'i18n/hi.json',
+    'i18n/gu.json',
+    'i18n/ta.json',
+    'i18n/ne.json',
     'i18n/zh.json',
     'i18n/ar.json',
     'i18n/ru.json'
