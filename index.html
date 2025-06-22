@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Survival Guide</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/fire.png">
+  <meta name="theme-color" content="#fff200">
+  <meta name="description" content="Offline emergency survival guide for fire, earthquake, first aid, and more.">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <button id="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">☰</button>
+    <h1 data-i18n="title">Emergency Survival Guide</h1>
+    <nav id="main-nav" class="hidden" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-i18n="home">Home</a></li>
+        <li><a href="fire.html" data-i18n="fire">Fire</a></li>
+        <li><a href="earthquake.html" data-i18n="earthquake">Earthquake</a></li>
+        <li><a href="firstaid.html" data-i18n="firstaid">First Aid</a></li>
+        <li><a href="gasleak.html" data-i18n="gasleak">Gas Leak</a></li>
+        <li><a href="accident.html" data-i18n="accident">Road Accident</a></li>
+      </ul>
+      <div class="lang-btn-group" style="margin-bottom: 15px;">
+        <button class="lang-btn" data-lang="en" aria-label="Switch to English">English</button>
+        <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">Español</button>
+        <button class="lang-btn" data-lang="fr" aria-label="Passer en français">Français</button>
+        <button class="lang-btn" data-lang="hi" aria-label="हिंदी में बदलें">हिंदी</button>
+        <button class="lang-btn" data-lang="gu" aria-label="Switch to Gujarati">ગુજરાતી</button>
+        <button class="lang-btn" data-lang="ta" aria-label="Switch to Tamil">தமிழ்</button>
+        <button class="lang-btn" data-lang="ne" aria-label="Switch to Nepali">नेपाली</button>
+        <button class="lang-btn" data-lang="zh" aria-label="切换到中文">中文</button>
+        <button class="lang-btn" data-lang="ar" aria-label="التبديل إلى العربية">العربية</button>
+        <button class="lang-btn" data-lang="ru" aria-label="Переключиться на русский">Русский</button>
+        <button class="lang-btn" data-lang="en-uk" aria-label="Switch to British English">English (UK)</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h2 data-i18n="intro_title">Be Prepared, Stay Safe</h2>
+      <p data-i18n="intro_text">
+        This offline-first guide provides step-by-step instructions for the most common emergencies: fire, earthquake, first aid, gas leaks, and road accidents. Access vital information even without an internet connection.
+      </p>
+      <button id="install-btn" class="hidden" aria-label="Install Emergency Guide App" data-i18n="install_app">Install App</button>
+    </section>
+    <section class="card-grid" aria-label="Emergency topics">
+      <a class="card fire" href="fire.html">
+        <img src="images/fire.png" alt="Fire Emergency">
+        <h2 data-i18n="fire_card_title">Fire Emergency</h2>
+        <p data-i18n="fire_card_desc">Learn what to do in case of a fire at home, work, or outdoors.</p>
+      </a>
+      <a class="card earthquake" href="earthquake.html">
+        <img src="images/earthquake.png" alt="Earthquake">
+        <h2 data-i18n="earthquake_card_title">Earthquake</h2>
+        <p data-i18n="earthquake_card_desc">Essential steps to protect yourself during and after an earthquake.</p>
+      </a>
+      <a class="card firstaid" href="firstaid.html">
+        <img src="images/first-aid.png" alt="First Aid">
+        <h2 data-i18n="firstaid_card_title">First Aid</h2>
+        <p data-i18n="firstaid_card_desc">Quick first aid tips for injuries, burns, bleeding, and more.</p>
+      </a>
+      <a class="card gasleak" href="gasleak.html">
+        <img src="images/gas.png" alt="Gas Leak">
+        <h2 data-i18n="gasleak_card_title">Gas Leak</h2>
+        <p data-i18n="gasleak_card_desc">How to recognize and respond to a gas leak safely.</p>
+      </a>
+      <a class="card accident" href="accident.html">
+        <img src="images/crash.png" alt="Road Accident">
+        <h2 data-i18n="accident_card_title">Road Accident</h2>
+        <p data-i18n="accident_card_desc">What to do if you witness or are involved in a road accident.</p>
+      </a>
+    </section>
+    <div id="offline-notice" class="hidden" role="status" data-i18n="offline_notice">You are offline. This guide works without internet.</div>
+  </main>
+  <footer>
+    <p data-i18n="footer_tip">This website is built to work offline during real emergencies.<br> <strong>Tip:</strong> Download and open it once to ensure offline access later. Stay calm, stay safe, and help others when you can.</p>
+    <p data-i18n="footer_copyright">&copy; 2024 Emergency Survival Guide. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/pwa.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/emergency-alert.js"></script>
+</body>
+</html> 

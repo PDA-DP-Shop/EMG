@@ -1,0 +1,104 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fire Emergency - Survival Guide</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/fire.png">
+  <meta name="theme-color" content="#fff200">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <button id="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">☰</button>
+    <h1 data-i18n="fire_card_title">Fire Emergency</h1>
+    <nav id="main-nav" class="hidden" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-i18n="home">Home</a></li>
+        <li><a href="fire.html" data-i18n="fire">Fire</a></li>
+        <li><a href="earthquake.html" data-i18n="earthquake">Earthquake</a></li>
+        <li><a href="firstaid.html" data-i18n="firstaid">First Aid</a></li>
+        <li><a href="gasleak.html" data-i18n="gasleak">Gas Leak</a></li>
+        <li><a href="accident.html" data-i18n="accident">Road Accident</a></li>
+      </ul>
+      <div class="lang-btn-group" style="margin-bottom: 15px;">
+        <button class="lang-btn" data-lang="en" aria-label="Switch to English">English</button>
+        <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">Español</button>
+        <button class="lang-btn" data-lang="fr" aria-label="Passer en français">Français</button>
+        <button class="lang-btn" data-lang="hi" aria-label="हिंदी में बदलें">हिंदी</button>
+        <button class="lang-btn" data-lang="gu" aria-label="Switch to Gujarati">ગુજરાતી</button>
+        <button class="lang-btn" data-lang="ta" aria-label="Switch to Tamil">தமிழ்</button>
+        <button class="lang-btn" data-lang="ne" aria-label="Switch to Nepali">नेपाली</button>
+        <button class="lang-btn" data-lang="zh" aria-label="切换到中文">中文</button>
+        <button class="lang-btn" data-lang="ar" aria-label="التبديل إلى العربية">العربية</button>
+        <button class="lang-btn" data-lang="ru" aria-label="Переключиться на русский">Русский</button>
+        <button class="lang-btn" data-lang="en-uk" aria-label="Switch to British English">English (UK)</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2 data-i18n="fire_card_title">Fire Emergency</h2>
+    <section class="steps-visual">
+      <div class="step-block">
+        <img src="images/fire/calm.png" alt="Stay Calm in Fire" class="step-img">
+        <div>
+          <strong data-i18n="fire_step1_title">Step 1: Stay Calm</strong>
+          <p data-i18n="fire_step1_desc">Do not panic. Assess the situation quickly.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <img src="images/fire/evacuate.png" alt="Evacuate" class="step-img">
+        <div>
+          <strong data-i18n="fire_step2_title">Step 2: Evacuate</strong>
+          <p data-i18n="fire_step2_desc">Leave the building immediately using the nearest safe exit.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <img src="images/fire/extinguisher.png" alt="Use Extinguisher" class="step-img">
+        <div>
+          <strong data-i18n="fire_step3_title">Step 3: Use Extinguisher</strong>
+          <p data-i18n="fire_step3_desc">If safe, use a fire extinguisher to put out small fires.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <img src="images/fire/call.png" alt="Call Emergency" class="step-img">
+        <div>
+          <strong data-i18n="fire_step4_title">Step 4: Call Emergency</strong>
+          <p data-i18n="fire_step4_desc">Dial emergency services once you are safe.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <img src="images/fire/no-re-enter.png" alt="Do Not Re-enter" class="step-img">
+        <div>
+          <strong data-i18n="fire_step5_title">Step 5: Do Not Re-enter</strong>
+          <p data-i18n="fire_step5_desc">Never go back inside a burning building.</p>
+        </div>
+      </div>
+    </section>
+    <section class="video-section">
+      <h3 data-i18n="fire_video_title">Watch: How to Survive a Fire</h3>
+      <div class="video-container">
+        <video controls width="100%" height="220" src="video/fire.mp4" title="How to Survive a Fire"></video>
+      </div>
+    </section>
+    <section class="emergency-numbers">
+      <h3 data-i18n="emergency_numbers">Emergency Numbers</h3>
+      <ul>
+        <li><strong data-i18n="fire_number_fire">Fire Department:</strong> <a href="tel:101">101</a></li>
+        <li><strong data-i18n="fire_number_ambulance">Ambulance:</strong> <a href="tel:102">102</a></li>
+        <li><strong data-i18n="fire_number_police">Police:</strong> <a href="tel:100">100</a></li>
+        <li><strong data-i18n="fire_number_general">General Emergency:</strong> <a href="tel:112">112</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p data-i18n="footer_tip">This website is built to work offline during real emergencies.<br> <strong>Tip:</strong> Download and open it once to ensure offline access later. Stay calm, stay safe, and help others when you can.</p>
+    <p data-i18n="footer_copyright">&copy; 2024 Emergency Survival Guide. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/pwa.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html> 

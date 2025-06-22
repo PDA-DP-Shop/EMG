@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earthquake Emergency - Survival Guide</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/earthquake.png">
+  <meta name="theme-color" content="#fff200">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <button id="menu-toggle" aria-label="Open menu">☰</button>
+    <h1 data-i18n="earthquake_card_title">Earthquake Emergency</h1>
+    <nav id="main-nav" class="hidden">
+      <ul>
+        <li><a href="index.html" data-i18n="home">Home</a></li>
+        <li><a href="fire.html" data-i18n="fire">Fire</a></li>
+        <li><a href="earthquake.html" data-i18n="earthquake">Earthquake</a></li>
+        <li><a href="firstaid.html" data-i18n="firstaid">First Aid</a></li>
+        <li><a href="gasleak.html" data-i18n="gasleak">Gas Leak</a></li>
+        <li><a href="accident.html" data-i18n="accident">Road Accident</a></li>
+      </ul>
+      <div class="lang-btn-group" style="margin-bottom: 15px;">
+        <button class="lang-btn" data-lang="en" aria-label="Switch to English">English</button>
+        <button class="lang-btn" data-lang="es" aria-label="Cambiar a Español">Español</button>
+        <button class="lang-btn" data-lang="fr" aria-label="Passer en français">Français</button>
+        <button class="lang-btn" data-lang="hi" aria-label="हिंदी में बदलें">हिंदी</button>
+        <button class="lang-btn" data-lang="gu" aria-label="Switch to Gujarati">ગુજરાતી</button>
+        <button class="lang-btn" data-lang="ta" aria-label="Switch to Tamil">தமிழ்</button>
+        <button class="lang-btn" data-lang="ne" aria-label="Switch to Nepali">नेपाली</button>
+        <button class="lang-btn" data-lang="zh" aria-label="切换到中文">中文</button>
+        <button class="lang-btn" data-lang="ar" aria-label="التبديل إلى العربية">العربية</button>
+        <button class="lang-btn" data-lang="ru" aria-label="Переключиться на русский">Русский</button>
+        <button class="lang-btn" data-lang="en-uk" aria-label="Switch to British English">English (UK)</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2 data-i18n="earthquake_card_title">What to Do in an Earthquake</h2>
+    <section class="steps-visual">
+      <div class="step-block">
+        <img src="images/earthquake/table.png" alt="Drop, Cover, Hold On" data-i18n-alt="earthquake_step1_alt" class="step-img">
+        <div>
+          <strong data-i18n="earthquake_step1_title">Step 1: Drop, Cover, Hold On</strong>
+          <p data-i18n="earthquake_step1_desc">Get down, take cover under sturdy furniture, and hold on.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <img src="images/earthquake/indoor.png" alt="Stay Indoors" data-i18n-alt="earthquake_step2_alt" class="step-img">
+        <div>
+          <strong data-i18n="earthquake_step2_title">Step 2: Stay Indoors</strong>
+          <p data-i18n="earthquake_step2_desc">Remain inside until shaking stops. Move away from windows.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <img src="images/earthquake/exit.png" alt="After Shaking" data-i18n-alt="earthquake_step3_alt" class="step-img">
+        <div>
+          <strong data-i18n="earthquake_step3_title">Step 3: After Shaking</strong>
+          <p data-i18n="earthquake_step3_desc">Carefully exit the building, watching for hazards.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <img src="images/earthquake/update.png" alt="Listen for Updates" data-i18n-alt="earthquake_step4_alt" class="step-img">
+        <div>
+          <strong data-i18n="earthquake_step4_title">Step 4: Listen for Updates</strong>
+          <p data-i18n="earthquake_step4_desc">Use a battery-powered radio for emergency information.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <img src="images/earthquake/help.png" alt="Help Others" data-i18n-alt="earthquake_step5_alt" class="step-img">
+        <div>
+          <strong data-i18n="earthquake_step5_title">Step 5: Help Others</strong>
+          <p data-i18n="earthquake_step5_desc">Check for injuries and provide first aid if needed.</p>
+        </div>
+      </div>
+    </section>
+    <section class="video-section">
+      <h3 data-i18n="earthquake_video_title">Watch: What to Do During an Earthquake</h3>
+      <div class="video-container">
+        <video controls width="100%" height="220" src="video/earthquake.mp4" title="What to Do During an Earthquake"></video>
+      </div>
+    </section>
+    <section class="emergency-numbers">
+      <h3 data-i18n="emergency_numbers">Emergency Numbers</h3>
+      <ul>
+        <li><strong data-i18n="earthquake_number_helpline">Disaster Helpline:</strong> <a href="tel:108">108</a></li>
+        <li><strong data-i18n="earthquake_number_ambulance">Ambulance:</strong> <a href="tel:102">102</a></li>
+        <li><strong data-i18n="earthquake_number_police">Police:</strong> <a href="tel:100">100</a></li>
+        <li><strong data-i18n="earthquake_number_general">General Emergency:</strong> <a href="tel:112">112</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p data-i18n="footer_tip">This website is built to work offline during real emergencies. Please download and open it once to ensure offline access later.</p>
+    <p data-i18n="footer_copyright">&copy; 2024 Emergency Survival Guide. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/pwa.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html> 

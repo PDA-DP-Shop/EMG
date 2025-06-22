@@ -1,0 +1,10 @@
+{
+  "IN": { "police": "100", "fire": "101", "ambulance": "102", "general": "112" },
+  "US": { "police": "911", "fire": "911", "ambulance": "911", "general": "911" },
+  "FR": { "police": "17", "fire": "18", "ambulance": "15", "general": "112" },
+  "RU": { "police": "102", "fire": "101", "ambulance": "103", "general": "112" },
+  "CN": { "police": "110", "fire": "119", "ambulance": "120", "general": "120" },
+  "ES": { "police": "091", "fire": "080", "ambulance": "061", "general": "112" },
+  "AR": { "police": "911", "fire": "100", "ambulance": "107", "general": "911" },
+  "DEFAULT": { "police": "112", "fire": "112", "ambulance": "112", "general": "112" }
+} 
